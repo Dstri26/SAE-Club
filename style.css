@@ -1,0 +1,215 @@
+:root {
+    --nav-color:#0d0b0b;
+    --font-color:#f0f0f3;
+    --sec-color:#513630;
+    --bg-color:#181b22;
+    --button-color:#da8413;
+    --font3-color:#9d9fa1;
+    --sec3-color:#a2b5d4;
+    --link-color:#90888f;
+    --font2-font-color: rgb(235, 230, 230);
+    --font1-font-family : 'Montserrat', sans-serif;
+    --font2-font-family : 'Poppins', sans-serif;
+    --font3-font-family : 'Roboto', sans-serif;
+}
+
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(212, 208, 208);
+}
+
+button{
+    text-decoration: none;
+    background: none;
+    border: none;
+    font: var(--font1-font-family);
+}
+
+body{
+    background: var(--bg-color);
+    margin: 0px;
+    font-family: var(--font1-font-family);
+    color: var(--font2-font-color);
+}
+
+
+/* ----------------------------NAV------------------------------ */
+nav{
+    
+    position: fixed;
+    width: 100%;
+    /* background: #090d14; */
+    padding: 20px 0px 20px;
+    color: #eee;
+    /* box-shadow: 2px 2px 4px #1a1919; */
+    z-index: 100;
+    
+}
+
+nav .nav-main{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-main .nav-logo{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    /* margin-left: 90px; */
+}
+
+nav .nav-main .nav-logo span{
+    color: #ec8d10;
+}
+
+
+nav .nav-main .nav-mid{
+    display: flex;
+    width: 44%;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 14px;
+    letter-spacing: 0.08rem;
+    font-weight: 600;
+    color: rgb(196, 193, 193);
+}
+
+nav .nav-main .nav-mid .active{
+    color: rgb(253, 253, 253);
+}
+
+nav .nav-main .nav-mid li:hover{
+    color: #da8413;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* -------------------------------------NAV RESPONSIVE-------------------------- */
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #eee;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #da8413;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+  .res-nav-icon{
+      /* display: none; */
+      /* margin-right: 30px; */
+      /* background: #1a1919;
+      width: 70px;
+      height: 67px;
+      position: absolute;
+      right: 0px; */
+  }
+
+  
+
+.overlay .book-room{
+    color: var(--font2-font-color);
+    background: #474747;
+    padding: 10px 20px;
+    letter-spacing: 0.05rem;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.overlay .book-room:hover{
+    background-color: #da8413;
+    transition: all 0.1s;
+}
+
+.overlay .book-room a:hover{
+    cursor: pointer;
+    color: #f0f0f3;
+}
+
+
+
+
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+
+/* ---------------------------------HERO-------------------------- */
+
+.hero{
+    top: 0px;
+    width: 100%;
+    position: absolute;
+    padding: 140px 0px 50px;
+    background-size: cover;
+    height: 80vh;    
+    background-image: url("./assets/atv2.jpg"), linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+.hero .hero-body{
+    width: 80%;
+    margin: auto;
+
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE-CETB</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./gallery.css" />
+
+    <script src="./index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!----------------AOS------------------>
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- ---------------GALLERY------------------- -->
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav>
+        <div class="nav-main">
+            <div class="nav-logo">
+                <span>SAE</span>  CET-B
+            </div>
+            <ul class="nav-mid">
+                <li class="active">HOME</li>
+                <li>ABOUT</li>
+                <li>ACHIEVEMENTS</li>
+                <li>GALLERY</li>
+                <li>TEAM</li>
+                <li>CONTACT</li>
+            </ul>
+    
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#home" >HOME</a>
+                  <a href="#about">ABOUT</a>
+                  <a href="#explore">ROOM TARIFFS</a>
+                  <a href="#nearest">NEAREST PLACES</a>
+                  <a href="#">CONTACT</a>
+                  
+                  
+                  <button class="book-room" data-aos="fade-down" data-aos-delay="1000">
+                    <a href="./modal/index.html">BOOK ROOM</a>
+                  </button>
+                  
+                </div>
+              </div>
+              
+              
+            <span class="res-nav-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>        
+    </nav>
+
+    <!-- ---------------------------HERO-------------------- -->
+    <div class="hero">
+       <div class="hero-body">
+            <h1>The Blue Jay Racing Team</h1>
+       </div>
+    </div>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+</body>
+</html>
