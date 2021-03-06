@@ -70,10 +70,12 @@ nav .nav-main .nav-logo{
     font-weight: 600;
     letter-spacing: 0.1rem;
     /* margin-left: 90px; */
+    text-shadow: 2px 2px 4px #000000;
+
 }
 
 nav .nav-main .nav-logo span{
-    color: #ec8d10;
+    color: #e4bd13;
 }
 
 
@@ -84,16 +86,19 @@ nav .nav-main .nav-mid{
     justify-content: space-between;
     font-size: 14px;
     letter-spacing: 0.08rem;
-    font-weight: 600;
-    color: rgb(196, 193, 193);
+    font-weight: 500;
+    color: rgb(241, 240, 240);
+    text-shadow: 2px 2px 4px #000000;
 }
 
 nav .nav-main .nav-mid .active{
-    color: rgb(253, 253, 253);
+    color: #e4bd13;
+    font-weight: 600;
 }
 
 nav .nav-main .nav-mid li:hover{
-    color: #da8413;
+    color: #e4bd13;
+    font-weight: 600;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -199,17 +204,168 @@ nav .nav-main .nav-mid li:hover{
     top: 0px;
     width: 100%;
     position: absolute;
-    padding: 140px 0px 50px;
     background-size: cover;
-    height: 80vh;    
-    background-image: url("./assets/atv2.jpg"), linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+    height: 100vh;    
+    background-image: url("./assets/atv4.jpg"), linear-gradient(rgba(26, 23, 23, 0.7),rgba(0, 0, 0, 0.7));
     background-blend-mode: overlay;
     background-position: center;
+    --font2-font-family : 'Poppins', sans-serif;
+    color: rgb(245, 245, 245);
+}
+
+
+
+
+
+.hero .hero-number{
+    position: absolute;
+    z-index: 11;
+    font-size: 22rem;
+    margin-top: 0px;
+    top: 20%;
+    margin-left: 4.3%;
+    color: rgba(78, 76, 76, 0.5);
+    font-family: var(--font3-font-family);
+    font-weight: 500;
+}
+
+.hero .hero-left{
+    position: absolute;
+    height: 100vh;
+    width: 30%;
+    background-image: linear-gradient(rgba(26, 23, 23, 0.9),rgba(0, 0, 0, 0.9));
+    z-index: 10;
 }
 
 .hero .hero-body{
     width: 80%;
-    margin: auto;
-
+    position: absolute;
+    z-index: 20;
+    left: 10%;
+    top: 25%;
 }
 
+.hero .hero-body h3{
+    position: relative;
+    margin-bottom: 0px;
+    font-weight: 500 !important;
+    font-size: 30px;
+}
+
+.hero .hero-body h1{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 2.5rem;
+    font-weight: 600 !important;
+    letter-spacing: 0.2rem;
+    font-size: 70px;
+}
+
+.hero .hero-body p{
+    font-size: 15px;
+    margin-top: 35px;
+    letter-spacing: 0.1rem;
+    width: 50%;
+    line-height: 1.5rem;
+}
+
+
+.hero .hero-body .hero-explore{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-left: -20px;
+    margin-top: 40px;
+}
+
+.hero .hero-body .hero-explore hr{
+    border: none;
+    height: 3px;
+    width: 50px;
+    background: #e4bd13;
+}
+
+
+.hero .hero-body .hero-explore a{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+}
+
+.hero .hero-body .hero-explore:hover{
+    margin-left: 0px;
+    transition: all 0.3s;
+}
+
+.hero .hero-social {
+    color: rgb(224, 220, 220) !important;
+    position: fixed;
+    z-index: 13;
+    display: flex;
+    flex-direction: column;
+    top: 35%;
+    height: 240px;
+    justify-content: space-evenly;
+    right: 0px;
+}
+
+.hero .hero-social i{
+    height: 60px;
+    width: 60px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+
+.hero .hero-social i:hover{
+    background: #e4bd13;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+
+.hero .hero-stats {
+    display: flex;
+    position: absolute;
+    z-index: 11;
+    width: 40%;
+    justify-content: space-between;
+    bottom: 3%;
+    left: 35%;    
+    align-items: center;
+}
+
+.hero .hero-stats .hero-stat-unit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3.5px solid #f0f0f3;
+    width: 33.33%;
+    height: 70px;
+}
+
+.hero .hero-stats .hero-stat-unit h4{
+    margin-bottom: 0px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-shadow: 2px 2px 4px #000000;
+    color: #e4bd13;
+    font-size: 0.95rem;
+    margin-top: 11px;
+}
+
+.hero .hero-stats .hero-stat-unit h5{
+    margin-top: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 0.95rem;
+}
+
+.hero .hero-stats .hero-stat-main{
+    border-right: none;
+}
