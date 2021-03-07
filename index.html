@@ -46,16 +46,16 @@
 <body>
     <nav>
         <div class="nav-main">
-            <div class="nav-logo">
+            <div class="nav-logo" data-aos="fade-down" data-aos-delay="300">
                 <span>SAE</span>  CET-B
             </div>
             <ul class="nav-mid">
-                <li class="active">HOME</li>
-                <li>ABOUT</li>
-                <li>ACHIEVEMENTS</li>
-                <li>GALLERY</li>
-                <li>TEAM</li>
-                <li>CONTACT</li>
+                <li ><a href="#home" class="active" data-aos="fade-down" data-aos-delay="500">HOME</a></li>
+                <li><a href="#about" data-aos="fade-down" data-aos-delay="600">ABOUT</a> </li>
+                <li><a href="#achieve" data-aos="fade-down" data-aos-delay="700">ACHIEVEMENTS</a></li>
+                <li><a href="#gallery" data-aos="fade-down" data-aos-delay="800">GALLERY</a> </li>
+                <li><a href="#team" data-aos="fade-down" data-aos-delay="900">TEAM</a> </li>
+                <li><a href="#footer" data-aos="fade-down" data-aos-delay="1000">CONTACT</a></li>
             </ul>
     
             <div id="myNav" class="overlay">
@@ -63,10 +63,10 @@
                 <div class="overlay-content">
                   <a href="#home" >HOME</a>
                   <a href="#about">ABOUT</a>
-                  <a href="#explore">ACHIEVEMENTS</a>
-                  <a href="#nearest">GALLERY</a>
-                  <a href="#">TEAM</a>
-                  <a href="#">CONTACT</a>            
+                  <a href="#achieve">ACHIEVEMENTS</a>
+                  <a href="#gallery">GALLERY</a>
+                  <a href="#team">TEAM</a>
+                  <a href="#footer">CONTACT</a>            
                   
                   
                   
@@ -74,40 +74,40 @@
               </div>
               
               
-            <span class="res-nav-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span class="res-nav-icon" style="font-size:30px;cursor:pointer" onclick="openNav()" data-aos="fade-down" data-aos-delay="1100">&#9776;</span>
         </div>        
     </nav>
 
 
     <!-- ---------------------------HERO-------------------- -->
-    <div class="hero">
-      <div class="hero-left"></div> 
-      <div class="hero-number">051</div>
-       <div class="hero-body">
-            <h3>The</h3>
-            <h1>Blue Jay <br><br> Racing Team</h1>
-            <p>To achieve anything in this game you must be prepare to dabble in the boundary of disaster. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, placeat?</p>
-            <div class="hero-explore">
+    <div class="hero" id="home">
+      <div class="hero-left" data-aos="fade-right" data-aos-delay="700"></div> 
+      <div class="hero-number" data-aos="fade-in" data-aos-delay="800">051</div>
+       <div class="hero-body" >
+            <h3 data-aos="fade-up" data-aos-delay="800">The</h3>
+            <h1 data-aos="fade-up" data-aos-delay="900">Blue Jay <br><br> Racing Team</h1>
+            <p data-aos="fade-up" data-aos-delay="1000">To achieve anything in this game you must be prepare to dabble in the boundary of disaster. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, placeat?</p>
+            <div class="hero-explore" data-aos="fade-right" data-aos-delay="1100">
               <hr>
               <a href="#">EXPLORE MORE</a>
             </div>
        </div>
        <div class="hero-social">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-envelope"></i>
-        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-facebook" data-aos="fade-left" data-aos-delay="400"></i>
+        <i class="fa fa-instagram" data-aos="fade-left" data-aos-delay="500"></i>
+        <i class="fa fa-envelope" data-aos="fade-left" data-aos-delay="600"></i>
+        <i class="fa fa-linkedin" data-aos="fade-left" data-aos-delay="700"></i>
        </div>
        <div class="hero-stats">
-         <div class="hero-stat-unit">
+         <div class="hero-stat-unit" >
            <h4>MAX SPEED</h4>
            <h5>60 KMPH</h5>
          </div>
-         <div class="hero-stat-unit">
+         <div class="hero-stat-unit" >
           <h4>ENGINE POWER</h4>
           <h5>9.46 HP</h5>
         </div>
-        <div class="hero-stat-unit hero-stat-main">
+        <div class="hero-stat-unit hero-stat-main" >
           <h4>ENGINE TORQUE</h4>
           <h5>2800 RPM</h5>
         </div>
@@ -117,7 +117,7 @@
 
     <!-- --------------------------ABOUT ----------------------------- -->
 
-    <div class="about">
+    <div class="about" id="about">
       <div class="about-body">
         <div class="about-head">
           <h1>ABOUT US</h1>
@@ -145,7 +145,7 @@
 
     <!-- -----------------------ACHIEVEMENTS-------------- -->
 
-    <div class="achieve">
+    <div class="achieve" id="achieve">
 
       
       <div class="achieve-body">
@@ -227,7 +227,7 @@
 
     <!-- --------------------GALLERY--------------------- -->
 
-    <div class="gal">
+    <div class="gal" id="gallery">
       <div class="gal-body">
         <div class="gal-head">
           <h1>GALLERY</h1>
@@ -280,7 +280,7 @@
 
 
     <!-- ---------------------------TEAM --------------------- -->
-    <div class="team">
+    <div class="team" id="team">
       <div class="team-body">
         <div class="team-head">
           <h1>OUR TEAM</h1>
@@ -367,7 +367,7 @@
     </div>
 
     <footer>
-      <div class="footer-body">
+      <div class="footer-body" id="footer">
         <div class="footer-left">
         
           <h2><span>SAE</span> CET-B</h2>
@@ -384,7 +384,7 @@
         <div class="footer-mid">
           <h2>CONTACT US</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nulla incidunt, laudantium mollitia ipsum quis Lorem ipsum dolor sit amet..</p>
-          <button><a href="#">CONTACT US</a></button>
+          <button><a href="#">DROP A MAIL</a></button>
         </div>
         <div class="footer-right">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.574986513498!2d85.77365701474993!3d20.276453986410683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7f9d486f7c3%3A0xde71ead59307dcca!2sCollege%20of%20Engineering%20and%20Technology%2C%20Bhubaneswar!5e0!3m2!1sen!2sin!4v1615141182897!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -392,6 +392,15 @@
       </div>
       
     </footer>
+
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 
     
 
@@ -408,5 +417,6 @@
 
     <script src="./javascript/observer.js"></script>
     <script src="./javascript/gallery.js"></script>
+    <script src="./javascript/scroll.js"></script>
 </body>
 </html>
