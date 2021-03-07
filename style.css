@@ -45,6 +45,15 @@ body{
 
 
 /* ----------------------------NAV------------------------------ */
+.nav-color{
+    background:#0e0b0b;
+    transition: all 0.3s;
+    
+}
+
+
+
+
 nav{
     
     position: fixed;
