@@ -203,7 +203,7 @@ nav .nav-main .nav-mid li:hover{
 .hero{
     top: 0px;
     width: 100%;
-    position: absolute;
+    position: relative;
     background-size: cover;
     height: 100vh;    
     background-image: url("./assets/atv4.jpg"), linear-gradient(rgba(26, 23, 23, 0.7),rgba(0, 0, 0, 0.7));
@@ -334,7 +334,7 @@ nav .nav-main .nav-mid li:hover{
     z-index: 11;
     width: 40%;
     justify-content: space-between;
-    bottom: 3%;
+    bottom: 4%;
     left: 35%;    
     align-items: center;
 }
@@ -369,3 +369,115 @@ nav .nav-main .nav-mid li:hover{
 .hero .hero-stats .hero-stat-main{
     border-right: none;
 }
+
+
+/* -----------------------------ABOUT-------------------- */
+
+
+.about{
+    position: relative;
+    padding: 100px 0px 100px;
+}
+
+.about .about-body{
+    width: 70%;
+    margin: auto;
+}
+
+.about .about-body .about-head h1{
+    position: relative;
+    font-size: 8em;
+    margin-top: 0px;
+    margin-bottom: -95px;
+    color: rgba(110, 108, 108, 0.5);
+    z-index: -1;
+}
+
+.about .about-body .about-head h2{
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 30px;
+    margin-left: 15px;
+    z-index: 5;
+}
+
+.about .about-body .about-head hr{
+    position: relative;
+    width: 50px;
+    height: 3.5px;
+    background: #e4bd13;
+    z-index: 5;
+    margin-top: 3px;
+    margin-bottom: 70px;
+    margin-left: 15px;
+    border: none;
+}
+
+
+.about .about-body .about-body-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: none;
+}
+
+
+.about .about-body .about-body-main .about-left{
+    width: 47%;
+}
+
+.about .about-body .about-body-main .about-left img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about .about-body .about-body-main p{
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.about .about-body .about-body-main p span{
+    color: #ecc516;
+    /* font-weight: 600; */
+    text-shadow: 2px 2px 4px #000000;    
+}
+
+
+.about .about-body .about-body-main .about-right{
+    width: 47%;
+}
+
+
+.about .about-body .about-body-main .about-right img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about .about-body .about-body-main .about-right button{
+    margin-top: 15px;
+    border: 2px solid #f0f0f3;
+    /* background: #e4bd13; */
+    padding: 10px 35px;
+}
+
+
+.about .about-body .about-body-main .about-right button a{
+    font-weight: 600;
+    /* color: #e4bd13; */
+    color: #f0f0f3;
+    letter-spacing: 00.1rem;
+
+}
+
+.about .about-body .about-body-main .about-right button:hover{
+    background: rgba(110, 108, 108, 0.5);
+    border: none;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+
+
