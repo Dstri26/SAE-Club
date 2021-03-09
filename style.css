@@ -314,12 +314,12 @@ nav .nav-main .nav-mid li:hover{
     display: flex;
     flex-direction: column;
     top: 35%;
-    height: 240px;
+    height: 300px;
     justify-content: space-evenly;
     right: 0px;
 }
 
-.hero .hero-social i{
+.hero .hero-social  i{
     height: 60px;
     width: 60px;
     background: rgba(0, 0, 0, 0.9);
@@ -465,7 +465,7 @@ nav .nav-main .nav-mid li:hover{
 }
 
 .about .about-body .about-body-main .about-right button{
-    margin-top: 15px;
+    margin-top: 20px;
     border: 2px solid #f0f0f3;
     /* background: #e4bd13; */
     padding: 10px 35px;
@@ -768,10 +768,14 @@ nav .nav-main .nav-mid li:hover{
 
 .register .register-body .register-main p{
     letter-spacing: 0.1rem;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.5rem;
     
+}
+
+.register .register-body .register-main p span{
+    font-weight: 600;
 }
 
 .register .register-body .register-main .register-right{
