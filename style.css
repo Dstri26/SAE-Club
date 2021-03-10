@@ -310,7 +310,7 @@ nav .nav-main .nav-mid li:hover{
 .hero .hero-social {
     color: rgb(243, 241, 241) !important;
     position: fixed;
-    z-index: 13;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     top: 35%;
